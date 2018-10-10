@@ -1,6 +1,13 @@
 # Pontikes
 #Metoo project for professor Pontikes
 
-Will try and utilize Scrapy.
+
+# libraries
+  * BeautifulSoup
+  
+  * Scrapy
+  
+  * Requests
 
 .csv conversion will follow.
+
