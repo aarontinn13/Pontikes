@@ -1,5 +1,5 @@
 # Pontikes
-#Metoo project for professor Pontikes
+#MeToo project for professor Pontikes
 
 
 # libraries
