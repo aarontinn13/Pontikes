@@ -1,12 +1,33 @@
 from bs4 import BeautifulSoup as Soup
 import requests
+import re
+
+page = requests.get('https://www.goodreads.com/book/show/23165017-separate-and-dominate?from_search=true', headers={'User-Agent': 'test'})
+page = page.text
+soup = Soup(page, 'html.parser')
+#soup = soup.prettify()
+soup = soup.find_all('span')
 
 
-page = requests.get('https://www.versobooks.com/blogs/3638-metoo-reading-list')
-#print(page)
+#print(soup)
+for i in soup:
+    print(i)
+    if i.find(id):
+        print(i.get_text())
+        print('--------------------------------------------\n')
 
-#print(page.content)
-soup = Soup(page.content)
-soup = soup.prettify()
-a = soup.find_all('em')
-#print(a)
+
+
+
+    #print(text)
+
+'''
+    x = i.get('id')
+    if x == None:
+        continue
+    #print(x)
+    text = i.find(id)
+    print(text)
+    #print(text.get_text())
+
+'''
